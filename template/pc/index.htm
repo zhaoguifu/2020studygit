@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{eyou:global name='web_title' /}</title>
+<meta name="description" content="{eyou:global name='web_description' /}" />
+<meta name="keywords" content="{eyou:global name='web_keywords' /}" />
+
+<link href="{eyou:global name='web_cmspath' /}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport" />
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/font-awesome.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/global.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/widget.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/variouscomponents.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/images.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/theme.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/color_0.css">
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.min.js"></script>
+<!--[if !IE]><!-->
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/base.js"></script>
+<!--<![endif]-->
+<!--[if gte IE 9]>
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/base.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+      <link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/font-awesome-ie7.min.css">
+      <script src="{eyou:global name='web_templets_pc' /}/skin/js/selectivizr.js"></script>
+      <script src="{eyou:global name='web_templets_pc' /}/skin/js/html5shiv.min.js"></script>
+      <script src="{eyou:global name='web_templets_pc' /}/skin/js/respond.min.js"></script>
+      <script src="{eyou:global name='web_templets_pc' /}/skin/js/modernizr.min.js"></script>
+    <![endif]-->
+<link href="{eyou:global name='web_templets_pc' /}/skin/css/lightbox.min.css" rel="stylesheet">
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.superslide.js"></script>
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/common.js"></script>
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/theme.js"></script>
+<!-- feib -->
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/layer.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/language.js"></script>
+<!-- plugins -->
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.formsvalidation.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.nodecommon.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/extend.js"></script>
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/animate.min.css">
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/animate.min.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/components.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.menu_style.js"></script>
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.init.js"></script>
+<script type="text/javascript">
+$(function(){
+    dataAnimate();
+    (function($,lanno){
+        if(lanno === "" || lanno === "default"){
+            return '';
+        }
+        $(".w-languege").each(function(){
+            $(this).find("a").each(function(){
+                if($(this).data("lanno") === lanno){
+                    $(this).addClass("cur");
+                }else{
+                    if($(this).hasClass("cur")){
+                        $(this).removeClass("cur");
+                    }
+                }
+            });
+        });
+    })(jQuery,"cn");
+});
+</script>
+</head>
+<body>
+<div class="body">
+  {eyou:include file="header.htm" /}
+  <style type="text/css">
+    @media (max-width:767px){
+        .bannerBox{width:100%; margin-left:-0%;}
+    }
+</style>
+  <section class="w-container bannerBox ">
+    <div class="banner">
+      <ul class="bxslider">
+      {eyou:adv pid='1'}
+        <li> <img src="{$field.litpic}" alt="{$field.title}" title="{$field.title}"/> <a href="javascript:void(0);" target="_self"><span id="" style="display:none;">none</span></a> </li>
+      {/eyou:adv} 
+      </ul>
+      <script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.bxslider.js"></script>
+      <link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/jquery.bxslider.css">
+      <script type="text/javascript">
+            var scale = '';
+            var speed = 500;
+            var pause = 5;
+            $(function () {
+                $('.banner>ul').bxSlider({
+                    mode: 'fade', /*滚动方式 fade、vertical、horizontal */
+                    auto: true, /*自动滚动*/
+                    autoControls: false, /*自动滚动按钮*/
+                    infiniteLoop: true, /*循环滚动*/
+                    hideControlOnEnd: true, /*无效按钮隐藏*/
+                    adaptiveHeight: true, /*图片是否实际缩放比高度显示控制，图片比例不一样高度变化*/
+                    minSlides: 1,
+                    maxSlides: 2,
+                    scale: scale,
+                    speed: speed,
+                    pause: pause * 1000
+                });
+            });
+        </script> 
+    </div>
+  </section>
+  <div class="w-container w-main">
+  {eyou:channelartlist typeid='3'}
+    <div class="w-section pdTop-large pdBottom-large">
+      <div class="row" style="max-width:;">
+        <div class="row-mask" ></div>
+        <div class="wrap-content-in  pdTop-default pdBottom-default">
+          <div class="li-div">
+            <div class="not-animated w-title w-title16" data-animate="fadeInUp" style="">
+              <div class="w-title-in">
+                <div class="w-title-inner">
+                  <div class="title-h-in">
+                    <h2 class="color_main color_h" style="" data-type="title">{eyou:field name='typename' /}</h2>
+                    <span class="color_vice color_span" style="" data-type="subtitle">{eyou:field name='englist_name' /}</span> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="li-div">
+            <div class="w-space space-b noChoose"  style="height:20px;">
+              <div class="stretch-b"></div>
+            </div>
+          </div>
+          <style type="text/css">
+    .w-productList1 .g-n3{ width:33.32%; *width:33.32%;}
+</style>
+          <div class="li-div">
+            <div class="not-animated w-productList w-productList1" data-animate="fadeInUp" style="text-align:center;">
+              <div class="w-productList-in clearfix">
+              {eyou:arclist titlelen='20' infolen='20' orderby='now' row='6'}
+                <div class="w-prd-list-cell g-n3">
+                  <div class="w-prd-list-cell-in">
+                    <div class="w-prd-con">
+                      <div class="w-prd-imgbox imgScaleBig"><a href="{$field.arcurl}" class="img-count w-prd-img">
+                        <div class="aspectRatio" style="padding-bottom:66.67%;"></div>
+                        <div class="img-count-in"><img src="{$field.litpic}"></div>
+                        </a></div>
+                      <div class="w-prd-infobox" style="text-align:center;">
+                        <h2 class="w-prd-name" style=""><a href="{$field.arcurl}">{$field.title}</a></h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {/eyou:arclist}   
+              </div>
+            </div>
+          </div>
+          <div class="li-div">
+            <div class="w-space space-b noChoose"  style="height:40px;">
+              <div class="stretch-b"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {/eyou:channelartlist}   
+  {eyou:channelartlist typeid='1'}
+    <div class="w-section pdTop-large pdBottom-large" style="background:url({eyou:ad aid='3'}{$field.litpic}{/eyou:ad}) no-repeat center;color:#ffffff;background-attachment:fixed;">
+      <div class="row" style="max-width:;">
+        <div class="row-mask" ></div>
+        <div class="wrap-content-in  pdTop-default pdBottom-default">
+          <div class="li-div">
+            <div class="not-animated w-text" data-animate="fadeInUp" style="">
+              <style type="text/css">
+							.w-title-colorWhite h2,.w-title-colorWhite .title-h-in >span{ color:#fff;}
+							.aboutUs_me .btn-more:hover{ background:none !important; color:#616161 !important;}
+							.aboutUs_me .btn-more::after{ content:''; position:absolute; left:50%; top:0; bottom:0; width:0; border-top:1px solid #616161; border-bottom:1px solid #616161;transition: all 0.5s;-moz-transition: all 0.5s;-webkit-transition: all 0.5s; }
+							.aboutUs_me .btn-more:hover::after{ width:100%; left:0;}
+							@media (max-width:960px){
+								.aboutUs_me .img_a{ display:none;}
+								.aboutUs_me .text_a{ float:none !important; width:100% !important;}
+								.aboutUs_me .text_a > div{ padding:2em 5% !important;}
+							}
+</style>
+              <div class="w-space" style="height:236px;"></div>
+              <div class="w-title w-title16 w-title-colorWhite">
+                <div class="title-h-in">
+                  <h2 class="color_main color_h">{eyou:field name='typename' /}</h2>
+                  <span class="color_vice color_span">{eyou:field name='englist_name' /}</span></div>
+              </div>
+              <div class="w-space" style="height:10px;"></div>
+              <div class="aboutUs_me clearfix" style="background:#FFFFFF; padding:6px; ">
+                <div class="img_a" style="float:left; width:47%;">{eyou:ad aid='4'}<img src="{$field.litpic}" style="max-width:100%;"/>{/eyou:ad}</div>
+                <div class="text_a" style="float:left; width:52.9%;">
+                  <div style=" padding:35px 8.5% 20px;">
+                    <div style="font-size:125%; color:#666;">{eyou:global name='web_name' /}</div>
+                    <div class="w-space" style="height:20px;"></div>
+                    <div style=" min-height:8.5em; color:#9c9c9c;">{eyou:type addtable='single_content'}{$field.content|html_msubstr=###,0,155}...{/eyou:type}</div>
+                    <div class="w-space" style="height:10px;"></div>
+                    <div><a href="{eyou:field name='typeurl' /}" target="_self">查看更多</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-space" style="height:72px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {/eyou:channelartlist}    
+    <script type="text/javascript">$(function(){$(".div-table-first").find(".div-table-first").each(function(){$(this).removeClass("div-table-first")});});</script> 
+  </div>
+  {eyou:include file="footer.htm" /}
+</div>
+<div class="topTel" onclick="$('body,html').animate({scrollTop: 0}, 500);"><i class="fa fa-arrow-up"></i></div>
+
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.global.js"></script> 
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.form.js"></script> 
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/lightbox.min.js"></script> 
+<script type="text/javascript" src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.custom.js"></script> 
+</body>
+</html>

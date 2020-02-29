@@ -1,0 +1,169 @@
+<div class="w-container w-footer">
+    <div class="w-footer-section pdTop-default pdBottom-default" >
+      <div class="w-footer-in" style="max-width:;">
+        <div class="foot-mask" ></div>
+        <div class="w-foot-content  pdTop-small pdBottom-small">
+          <div class="li-div" data-comunique="f0b3a81e5ad8e414efd446da1355311e">
+            <div class="w-space space-b noChoose"  style="height:40px;">
+              <div class="stretch-b"></div>
+            </div>
+          </div>
+          <div class="li-div">
+            <div class="w-title w-title16"  style="">
+              <div class="w-title-in">
+                <div class="w-title-inner">
+                  <div class="title-h-in">
+                    <h2 class="color_main color_h" style="" data-type="title">联系方式</h2>
+                    <span class="color_vice color_span" style="" data-type="subtitle">CONTACT US</span> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="li-div">
+            <div class="w-space space-b noChoose"  style="height:35px;">
+              <div class="stretch-b"></div>
+            </div>
+          </div>
+          <div class="li-div col-li-div">
+            <div class="col-table">
+              <table class="div-table div-table-first" width="100%" cellspacing="0" data-pid="1101941" cellpadding="0" border="0">
+                <tbody>
+                  <tr>
+                    <td class="td-w" width="46.271186440677965%"><div class="div-padding">
+                        <div class="li-div">
+                          <div class="w-text"  style=""> <font size="4" color="#444444">{eyou:global name='web_name' /}</font> </div>
+                        </div>
+                        <div class="li-div">
+                          <div class="w-space space-b noChoose"  style="height:20px;">
+                            <div class="stretch-b"></div>
+                          </div>
+                        </div>
+                        <div class="li-div" data-comunique="92c4d6d112b3c34a2d1e562b0ffeab02">
+                          <div class="w-text"  style=""> 电话：{eyou:global name='web_attr_1' /}<br/>
+                              传真：{eyou:global name='web_attr_2' /}<br/>
+                              邮箱：{eyou:global name='web_attr_3' /}<br/>
+                              Q Q：{eyou:global name='web_attr_4' /}<br/>
+                              地址：{eyou:global name='web_attr_5' /}<br/>
+                          </div>
+                        </div>
+                      </div></td>
+                    <td class="td-w" width="4.23728813559322%"><div class="div-padding">
+                        <div class="li-div">
+                          <div class="w-space space-b noChoose"  style="height:40px;">
+                            <div class="stretch-b"></div>
+                          </div>
+                        </div>
+                      </div></td>
+                    <td class="td-w" width="49.23728813559322%"><div class="div-padding">
+                        <div class="li-div">
+                          <div class="w-form"   style="">
+                            {eyou:guestbookform type='default' typeid='5'}
+                          <form method="POST" class="guest-form" enctype="multipart/form-data" action="{$field.action}" id="myform">
+                            <div class="li-div">
+                              <div class="w-form-section  w-form-UL clearfix" style="">
+                                <div class="w-form-shartText">
+                                  <label class="w-label-form"> <span>{$field.itemname_1}</span> </label>
+                                  <div class="w-form-fr" style="">
+                                    <input class="w-text-form" style="width:100%" type="text" name="{$field.attr_1}" id="attr_1"/>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="li-div">
+                              <div class="w-form-section  w-form-UL clearfix" style="">
+                                <div class="w-form-tel">
+                                  <label class="w-label-form"> <span>{$field.itemname_2}</span> </label>
+                                  <div class="w-form-fr" style="">
+                                    <input class="w-text-form" style="width:100%" type="tel" name="{$field.attr_2}" id="attr_2">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="li-div">
+                              <div class="w-form-section  w-form-UL clearfix" style="">
+                                <div class="w-form-Email">
+                                  <label class="w-label-form"> <span>{$field.itemname_3}</span> </label>
+                                  <div class="w-form-fr" style="">
+                                    <input class="w-text-form" style="width:100%" type="email" name="{$field.attr_3}" id="attr_3"/>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="li-div">
+                              <div class="w-form-section w-form-UL clearfix"  style="">
+                                <div class="w-form-largeText">
+                                  <label class="w-label-form"> {$field.itemname_4} </label>
+                                  <div class="w-form-fr" style="">
+                                    <textarea class="w-textarea-form" style="width:100%;height:5em" name="{$field.attr_4}" id="attr_4"></textarea>
+                                    <input class="w-text-form" type="hidden"/>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            {$field.hidden}
+                            </form>
+						  <script type="text/javascript">
+                            function checkForm()
+                            {
+                              if(document.getElementById('attr_1').value.length == 0)
+                              {
+                                alert('请输入{$field.itemname_1}');
+                                return false;
+                              }
+                              if(document.getElementById('attr_2').value.length == 0)
+                              {
+                                alert('请输入{$field.itemname_2}');
+                                return false;
+                              }
+                              document.getElementById('myform').submit();
+                            }
+                          </script>
+                        {/eyou:guestbookform}
+                            <div class="w-form-submit">
+                              <div class="w-buttom" style="">
+                                <div class="btn-default-w g-form-components" onclick="checkForm();"> <span class="btn-inner">提交</span> </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="li-div">
+            <div class="w-space space-b noChoose"  style="height:40px;">
+              <div class="stretch-b"></div>
+            </div>
+          </div>
+          <div class="li-div">
+            <div class="w-text"  style="">
+              <div class="line" style="background:#E9E9E8; position:absolute; width:5000px;height:1px; left:-1500px;"></div>
+              <div style="text-align:center; padding-top:1em; font-size:95%;">{eyou:global name='web_copyright' /} &nbsp;&nbsp;{eyou:global name='web_recordnum' /}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-service-fixed">
+      <div class="service-item bg_s_default color_s_default aHoverbg_deepen aHovercolor_deepen service-item-top"> <i class="fa fa-caret-up"></i>
+        <div class="top" onclick="$('body,html').animate({scrollTop: 0}, 'normal');">TOP</div>
+      </div>
+      <script type="text/javascript">
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 20) {
+                    $('.w-service-fixed .service-item-top').show();
+                } else {
+                    $('.w-service-fixed .service-item-top').hide();
+                }
+            });
+        });
+    </script> 
+    </div>
+  </div>
+   {eyou:global name='web_thirdcode_pc' /}
+  <!-- 应用插件标签 start -->
+  {eyou:weapp type='default' /}
+  <!-- 应用插件标签 end -->
