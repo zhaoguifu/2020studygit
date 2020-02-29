@@ -45,3 +45,4 @@ define('DEFAULT_SERIALNUMBER','20180508131400oCWIoa');
 define('APP_PATH', __DIR__ . '/application/');
 // 加载框架引导文件
 require __DIR__ . '/core/start.php';
+//学习任何事情都是一个过程，需要不断的调整去攻克困难！！
